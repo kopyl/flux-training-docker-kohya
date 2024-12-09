@@ -1,0 +1,3 @@
+a photo of sks girl --d 1 --l 7 --h 1024 --w 1024 --s 100
+a photo of sks girl on a bike --d 1 --l 7 --h 1024 --w 1024 --s 100
+a photo of sks girl holding flowers in a studio --d 1 --l 7 --h 1024 --w 1024 --s 100

@@ -1,0 +1,36 @@
+accelerate launch \
+  --mixed_precision bf16 \
+  --num_cpu_threads_per_process 2 \
+  flux_train.py \
+  --pretrained_model_name_or_path ../models/flux/flux1-dev.safetensors \
+  --clip_l ../models/flux/clip_l.safetensors \
+  --t5xxl ../models/flux/t5xxl_enconly.safetensors \
+  --ae ../models/flux/ae.safetensors \
+  --save_model_as safetensors \
+  --sdpa \
+  --seed 1 \
+  --gradient_checkpointing \
+  --mixed_precision bf16 \
+  --save_precision fp16 \
+  --highvram \
+  --cache_text_encoder_outputs_to_disk \
+  --cache_latents_to_disk \
+  --optimizer_type adafactor \
+  --optimizer_args "relative_step=False" "scale_parameter=False" "warmup_init=False" "weight_decay=0.01" \
+  --lr_scheduler constant \
+  --max_grad_norm 0.0 \
+  --timestep_sampling sigmoid \
+  --discrete_flow_shift 3.1582 \
+  --model_prediction_type raw \
+  --guidance_scale 1.0 \
+  --full_bf16 \
+  --vae_batch_size 4 \
+  --dataset_config ../dataset-config.toml \
+  --output_name finetuned-model \
+  --output_dir ../output \
+  --apply_t5_attn_mask \
+  --save_every_n_epochs 70 \
+  --max_train_epochs 300 \
+  --sample_every_n_epochs 10  \
+  --learning_rate 1.1e-5 \
+  --sample_prompts ../sample_prompts.txt

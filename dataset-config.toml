@@ -1,0 +1,8 @@
+[[datasets]]
+resolution = 1024
+batch_size = 1
+keep_tokens = 0
+
+  [[datasets.subsets]]
+  image_dir = '../sample-female-dataset'
+  class_tokens = 'sks girl'
