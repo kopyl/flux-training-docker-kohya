@@ -8,22 +8,22 @@ Throughout my ML career i found that the best way to train diffusion models is w
 
 One of the coolest advantages I like:
 
-- Way less bugs than [huggingface/diffusers](https://github.com/huggingface/diffusers) repo's training scipts have
-- Latest and gratest models to train
-- Amazing speed optimization which i could not get [myself re-writing huggingface/diffusers' Flux training code](https://github.com/kopyl/diffusers/commit/561962d1c01a9ed0c7b7873f1bede24a5ee19139)
+- Way less bugs than [huggingface/diffusers](https://github.com/huggingface/diffusers) repo's training scipts have;
+- Latest and gratest models to trainl
+- Amazing speed optimization which i could not get [myself re-writing huggingface/diffusers' Flux training code](https://github.com/kopyl/diffusers/commit/561962d1c01a9ed0c7b7873f1bede24a5ee19139);
 - Not very difficult to understand in terms of the architecture and the code readability
 
 While being really nice to use, you have to spend a while setting up a simple Flux Dreambooth training environment, which is basically:
 
-1. Install everything a repo requires you to. Sometimes even a newer version of Python. And I always had to install additional packages which are out of scope of the required ones by the sd-scripts repo like `torchvision` and `opencv`.
+1. Install everything a repo requires you to. Sometimes even a newer version of Python. And I always had to install additional packages which are out of scope of the required ones by the sd-scripts repo like `torchvision` and `opencv`;
 2. Copy all the models into your project environment (and find them on the internet if you not happen to casually store 30gb of data on your computer).
 
 ### With this project all you have to do to run that training:
 
-1. Deploy a container (or run on your own machine)
-2. `exec -it {name} bash` into a container
-3. Upload photos of your subject and change the subject's identifier if needed (like `sks woman`) in `dataset-config.toml`
-4. Run the training script like `bash run-training.sh`
+1. Deploy a container (or run on your own machine);
+2. `exec -it {name} bash` into a container;
+3. Upload photos of your subject and change the subject's identifier if needed (like `sks woman`) in `dataset-config.toml`;
+4. Run the training script like `bash run-training.sh`;
 5. When the training is finished, you will find the trained Flux model (transformer type) in the
 
 ### Things you might also want to change:
@@ -40,7 +40,7 @@ While being really nice to use, you have to spend a while setting up a simple Fl
 
 ### But how am I supposed to use that training model in Diffusers?
 
-1. Make sure you have the latest version of diffusers from the [official repo](https://github.com/huggingface/diffusers).
+1. Make sure you have the latest version of diffusers from the [official repo](https://github.com/huggingface/diffusers);
 2. Do a couple imports:
 
 ```
