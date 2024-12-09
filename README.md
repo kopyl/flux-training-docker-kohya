@@ -10,7 +10,7 @@ One of the coolest advantages I like:
 
 - Way less bugs than [huggingface/diffusers](https://github.com/huggingface/diffusers) repo's training scipts have
 - Latest and gratest models to train
-- Amazing speed optimization which i could not get myself re-writing [huggingface/diffusers](https://github.com/huggingface/diffusers)'s Flux training code
+- Amazing speed optimization which i could not get [myself re-writing huggingface/diffusers' Flux training code](https://github.com/kopyl/diffusers/commit/561962d1c01a9ed0c7b7873f1bede24a5ee19139)
 - Not very difficult to understand in terms of the architecture and the code readability
 
 While being really nice to use, you have to spend a while setting up a simple Flux Dreambooth training environment, which is basically:
