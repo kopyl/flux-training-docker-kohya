@@ -8,9 +8,9 @@ Throughout my ML career i found that the best way to train diffusion models is w
 
 One of the coolest advantages I like:
 
-- Way less bugs than `huggingface/diffusers` repo's training scipts have
+- Way less bugs than [huggingface/diffusers](https://github.com/huggingface/diffusers) repo's training scipts have
 - Latest and gratest models to train
-- Amazing speed optimization which i could not get myself re-writing `huggingface/diffusers`'s Flux training code
+- Amazing speed optimization which i could not get myself re-writing [huggingface/diffusers](https://github.com/huggingface/diffusers)'s Flux training code
 - Not very difficult to understand in terms of the architecture and the code readability
 
 While being really nice to use, you have to spend a while setting up a simple Flux Dreambooth training environment, which is basically:
