@@ -1,10 +1,10 @@
 ### TL;DR
 
-Dockerized way to fine-tune FLUX.1-dev model using Dreambooth metod with memory-efficient and configurable training,
+Dockerized way to fine-tune [FLUX.1-dev model](https://huggingface.co/black-forest-labs/FLUX.1-dev) using Dreambooth metod with memory-efficient and configurable training,
 
 ### Purpose of this project
 
-Throughout my ML career i found that the best way to train diffusion models is with kohya's sd-scripts repo.
+Throughout my ML career i found that the best way to train diffusion models is with [kohya's sd-scripts repo](https://github.com/kohya-ss/sd-scripts/tree/sd3).
 
 One of the coolest advantages I like:
 
