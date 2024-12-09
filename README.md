@@ -1,6 +1,6 @@
 ### TL;DR
 
-Dockerized way to fine-tune FLUX.1-dev medel using Dreambooth metod with memory-efficient and configurable training,
+Dockerized way to fine-tune FLUX.1-dev model using Dreambooth metod with memory-efficient and configurable training,
 
 ### Purpose of this project
 
