@@ -24,7 +24,7 @@ While being really nice to use, you have to spend a while setting up a simple Fl
 2. `exec -it {name} bash` into a container;
 3. Upload photos of your subject and change the subject's identifier if needed (like `sks woman`) in `dataset-config.toml`;
 4. Run the training script like `bash run-training.sh`;
-5. When the training is finished, you will find the trained Flux model (transformer type) in the
+5. When the training is finished, you will find the trained Flux model (transformer type) in the /output directory of a container
 
 ### Things you might also want to change:
 
