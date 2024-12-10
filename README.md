@@ -1,6 +1,7 @@
 ## Dockerized way to fine-tune [FLUX.1-dev model](https://huggingface.co/black-forest-labs/FLUX.1-dev) using Dreambooth metod with memory-efficient and configurable training,
 
 Dockerhub: [kopyl/train-flux-kohya-sd-scripts](https://hub.docker.com/repository/docker/kopyl/train-flux-kohya-sd-scripts/general)
+<br/>
 For the simplified way of running the training, reference [The most common use case](https://github.com/kopyl/flux-training-docker-kohya/blob/main/docker-helper-commands.md#the-most-common-use-case) section.
 
 ### Purpose of this project
