@@ -23,7 +23,7 @@ COPY run-training.sh /run-training.sh
     # IMG_8197.JPG
     # IMG_8198.JPG
 # so feel free to rebuild this image with your own pictures of the subject you want the model to train on
-COPY sample-female-dataset sample-female-dataset
+RUN mkdir /dataset
 COPY dataset-config.toml /dataset-config.toml
 COPY sample_prompts.txt /sample_prompts.txt
 

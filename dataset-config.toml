@@ -4,5 +4,5 @@ batch_size = 1
 keep_tokens = 0
 
   [[datasets.subsets]]
-  image_dir = 'sample-female-dataset'
+  image_dir = 'dataset'
   class_tokens = 'sks girl'
