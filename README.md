@@ -37,6 +37,7 @@ While being really nice to use, you have to spend a while setting up a simple Fl
 - Change `--sample_every_n_epochs` parameter;
 - Change `--learning_rate` paramet;
 - Adjust contents of `sample_prompts.txt` file to fit the subject token. I.e: if class token is `sks man`, prompts start with `a photo of sks man...` and I'm training a model on a woman, then I'd need to change `sks man` part in all prompts to `sks woman`. Also change the class token in the `dataset-config.toml` file.
+  ([prompt formatting syntax](https://github.com/kohya-ss/sd-scripts?tab=readme-ov-file#sample-image-generation-during-training))
 
 ### But how am I supposed to use that training model in Diffusers?
 
