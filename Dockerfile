@@ -19,8 +19,6 @@ RUN pip install opencv-python-headless==4.10.0.84
 RUN pip install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu124
 
 COPY run-training.sh /run-training.sh
-COPY dataset-config.toml /dataset-config.toml
-COPY sample_prompts.txt /sample_prompts.txt
 
 COPY Dockerfile .
 COPY README.md .
