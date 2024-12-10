@@ -15,7 +15,7 @@ COPY sd-scripts /sd-scripts
 WORKDIR /sd-scripts
 RUN pip install -r requirements.txt
 WORKDIR /
-RUN pip install opencv-python==4.10.0.84
+RUN pip install opencv-python-headless==4.10.0.84
 RUN pip install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu124
 
 COPY run-training.sh /run-training.sh
