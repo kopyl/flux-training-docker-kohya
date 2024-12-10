@@ -72,4 +72,4 @@ docker logs train-flux-kohya-sd-scripts -f
 ```
 
 Each 10 epochs there are going to be generated the images from your prompts inside `/output/sample` directory (which you mount to `./output/sample` on your host with the `docker run` command above).
-When the training is finished, you get the model name `finetuned-model.safetensors` inside `/output` directory.
+When the training is finished, you get the model name `finetuned-model.safetensors` inside `/output` directory. For more info on how to generate images with the train models, read [But how am I supposed to use that training model in Diffusers?](https://github.com/kopyl/flux-training-docker-kohya/blob/main/README.md#but-how-am-i-supposed-to-use-that-training-model-in-diffusers) section.
