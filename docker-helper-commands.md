@@ -20,3 +20,7 @@ docker rm -f train-flux-kohya-sd-scripts && \
     docker ps && \
     docker logs train-flux-kohya-sd-scripts -f
 ```
+
+```
+docker exec -it train-flux-kohya-sd-scripts bash
+```
