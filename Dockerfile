@@ -19,10 +19,6 @@ RUN pip install opencv-python-headless==4.10.0.84
 RUN pip install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu124
 
 COPY run-training.sh /run-training.sh
-# sample-female-dataset directory contains 10 publicly available photos of a random girl on the internet like:
-    # IMG_8197.JPG
-    # IMG_8198.JPG
-# so feel free to rebuild this image with your own pictures of the subject you want the model to train on
 COPY dataset-config.toml /dataset-config.toml
 COPY sample_prompts.txt /sample_prompts.txt
 
