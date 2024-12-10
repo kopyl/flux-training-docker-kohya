@@ -2,7 +2,7 @@
 
 Dockerhub: [kopyl/train-flux-kohya-sd-scripts](https://hub.docker.com/repository/docker/kopyl/train-flux-kohya-sd-scripts/general)
 <br/>
-For the simplified way of running the training, reference [The most common use case](https://github.com/kopyl/flux-training-docker-kohya/blob/main/docker-helper-commands.md#the-most-common-use-case) section.
+[Simplified training run](https://github.com/kopyl/flux-training-docker-kohya/blob/main/docker-helper-commands.md#the-most-common-use-case) guide.
 
 ### Purpose of this project
 
