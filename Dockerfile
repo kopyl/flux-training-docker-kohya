@@ -29,4 +29,4 @@ COPY sample_prompts.txt /sample_prompts.txt
 COPY Dockerfile .
 COPY README.md .
 
-CMD ["sleep", "infinity"]
+CMD ["bash", "run-training.sh"]
