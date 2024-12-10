@@ -13,8 +13,8 @@ COPY models /models
 COPY sd-scripts /sd-scripts
 
 WORKDIR /sd-scripts
-
 RUN pip install -r requirements.txt
+WORKDIR /
 RUN pip install opencv-python==4.10.0.84
 RUN pip install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu124
 
@@ -34,3 +34,4 @@ CMD ["sleep", "infinity"]
 
 # docker build -t kopyl/train-flux-kohya-sd-scripts .
 # The image is available @ Dockerhub by the same tag above
+# docker run --name train-flux-kohya-sd-scripts -d kopyl/train-flux-kohya-sd-scripts
