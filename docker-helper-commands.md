@@ -22,7 +22,6 @@ docker rm -f train-flux-kohya-sd-scripts && \
         --env SAMPLE_EVERY_N_EPOCHS=10 \
         --env LEARNING_RATE="1.1e-5" \
         kopyl/train-flux-kohya-sd-scripts && \
-    docker ps && \
     docker logs train-flux-kohya-sd-scripts -f
 ```
 
