@@ -16,11 +16,11 @@ docker rm -f train-flux-kohya-sd-scripts && \
         -v ./sample_prompts.txt:/sample_prompts.txt \
         --gpus all \
         --shm-size 8G \
-        --env OUTPUT_MODEL_NAME="four-epoch-test-model" \
-        --env SAVE_EVERY_N_EPOCHS=2 \
-        --env MAX_TRAIN_EPOCHS=4 \
-        --env SAMPLE_EVERY_N_EPOCHS=1 \
-        --env LEARNING_RATE="1.11e-5" \
+        --env OUTPUT_MODEL_NAME="finetuned-model" \
+        --env SAVE_EVERY_N_EPOCHS=70 \
+        --env MAX_TRAIN_EPOCHS=300 \
+        --env SAMPLE_EVERY_N_EPOCHS=10 \
+        --env LEARNING_RATE="1.1e-5" \
         kopyl/train-flux-kohya-sd-scripts && \
     docker ps && \
     docker logs train-flux-kohya-sd-scripts -f
