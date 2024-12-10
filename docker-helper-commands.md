@@ -8,7 +8,7 @@ docker rm -f train-flux-kohya-sd-scripts && \
     docker run \
         --name train-flux-kohya-sd-scripts \
         -d \
-        -v kohya-docker-output:/output
+        -v ./kohya-docker-output:/output \
         --gpus all \
         --shm-size 8G \
         kopyl/train-flux-kohya-sd-scripts && \
