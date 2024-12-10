@@ -12,8 +12,6 @@ docker rm -f train-flux-kohya-sd-scripts && \
         -d \
         -v ./output:/output \
         -v ./dataset:/dataset \
-        -v ./dataset-config.toml:/dataset-config.toml \
-        -v ./sample_prompts.txt:/sample_prompts.txt \
         --gpus all \
         --shm-size 8G \
         kopyl/train-flux-kohya-sd-scripts && \
