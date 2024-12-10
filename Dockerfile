@@ -33,5 +33,4 @@ COPY README.md .
 CMD ["sleep", "infinity"]
 
 # docker build -t kopyl/train-flux-kohya-sd-scripts .
-# The image is available @ Dockerhub by the same tag above
 # docker run --name train-flux-kohya-sd-scripts -d kopyl/train-flux-kohya-sd-scripts
