@@ -26,11 +26,11 @@ accelerate launch \
   --full_bf16 \
   --vae_batch_size 4 \
   --dataset_config dataset-config.toml \
-  --output_name finetuned-model \
   --output_dir output \
   --apply_t5_attn_mask \
-  --save_every_n_epochs 70 \
-  --max_train_epochs 300 \
-  --sample_every_n_epochs 10  \
-  --learning_rate 1.1e-5 \
-  --sample_prompts sample_prompts.txt
+  --sample_prompts sample_prompts.txt \
+  --output_name "${OUTPUT_MODEL_NAME:-finetuned-model}" \
+  --save_every_n_epochs "${SAVE_EVERY_N_EPOCHS:-70}" \
+  --max_train_epochs "${MAX_TRAIN_EPOCHS:-300}" \
+  --sample_every_n_epochs "${SAMPLE_EVERY_N_EPOCHS:-10}"  \
+  --learning_rate "${LEARNING_RATE:-1.1e-5}"
