@@ -32,7 +32,7 @@ docker exec -it train-flux-kohya-sd-scripts bash
 The environment variables are just the defaults.
 Unless not provided, the same values are going to be used
 
-The most common use case:
+### The most common use case:
 
 1. Clone the repo with (git must be installed):
 
