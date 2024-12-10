@@ -14,5 +14,5 @@ docker rm -f train-flux-kohya-sd-scripts && \
         --shm-size 8G \
         kopyl/train-flux-kohya-sd-scripts && \
     docker ps && \
-    docker exec -it train-flux-kohya-sd-scripts bash
+    docker logs train-flux-kohya-sd-scripts -f
 ```
