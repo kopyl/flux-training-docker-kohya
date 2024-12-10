@@ -39,6 +39,8 @@ While being really nice to use, you have to spend a while setting up a simple Fl
 - Adjust contents of `sample_prompts.txt` file to fit the subject token. I.e: if class token is `sks man`, prompts start with `a photo of sks man...` and I'm training a model on a woman, then I'd need to change `sks man` part in all prompts to `sks woman`. Also change the class token in the `dataset-config.toml` file.
   ([prompt formatting syntax](https://github.com/kohya-ss/sd-scripts?tab=readme-ov-file#sample-image-generation-during-training))
 
+For the simplified way of running the training, reference [The most common use case](https://github.com/kopyl/flux-training-docker-kohya/blob/main/docker-helper-commands.md#the-most-common-use-case) section.
+
 ### But how am I supposed to use that training model in Diffusers?
 
 1. Make sure you have the latest version of diffusers from the [official repo](https://github.com/huggingface/diffusers);
