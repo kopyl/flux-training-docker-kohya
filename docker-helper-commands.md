@@ -29,3 +29,6 @@ docker rm -f train-flux-kohya-sd-scripts && \
 ```
 docker exec -it train-flux-kohya-sd-scripts bash
 ```
+
+The environment variables are just the defaults.
+Unless not provided, the same values are going to be used
