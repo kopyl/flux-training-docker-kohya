@@ -60,6 +60,7 @@ docker run \
     -v ./dataset:/dataset \
     -v ./dataset-config.toml:/dataset-config.toml \
     -v ./sample_prompts.txt:/sample_prompts.txt \
+    -v ./run-training.sh:/run-training.sh \
     --gpus all \
     --shm-size 8G \
     kopyl/train-flux-kohya-sd-scripts
